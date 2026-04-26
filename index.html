@@ -7,8 +7,109 @@
 <script src='https://cdn.tailwindcss.com'></script>
 <script src='https://unpkg.com/lucide@latest'></script>
 <link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap' rel='stylesheet'>
-<style>body{font-family:'Tajawal',sans-serif}.accordion-content{transition-property:max-height,opacity;transition-duration:300ms;transition-timing-function:ease-in-out}</style>
-</head>
+<style>
+body{
+  font-family:'Tajawal',sans-serif;
+  background:#f6f7fb!important;
+  color:#111827!important;
+  line-height:1.95!important;
+}
+
+.accordion-content{
+  transition-property:max-height,opacity;
+  transition-duration:300ms;
+  transition-timing-function:ease-in-out;
+}
+
+header{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:22px;
+  padding:18px 14px;
+  box-shadow:0 8px 22px rgba(17,24,39,.06);
+}
+
+header h1{
+  font-size:1.6rem!important;
+  line-height:1.4!important;
+  color:#111827!important;
+}
+
+header p{
+  font-size:.95rem!important;
+  line-height:1.85!important;
+  color:#4b5563!important;
+}
+
+#tabs-container{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:8px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+
+#tabs-container button{
+  width:100%!important;
+  text-align:right!important;
+  border-radius:16px!important;
+  padding:12px!important;
+  border:1px solid #e5e7eb!important;
+  box-shadow:0 4px 14px rgba(17,24,39,.04)!important;
+  font-weight:800!important;
+}
+
+#content-container{
+  max-width:680px!important;
+  gap:12px!important;
+}
+
+.section-card{
+  border-radius:18px!important;
+  box-shadow:0 4px 16px rgba(17,24,39,.05)!important;
+  border:1px solid #e5e7eb!important;
+}
+
+.accordion-btn{
+  padding:14px!important;
+}
+
+.accordion-title{
+  font-size:1.05rem!important;
+  line-height:1.7!important;
+}
+
+.card-inner{
+  padding:13px!important;
+}
+
+.detail-grid{
+  grid-template-columns:1fr!important;
+  gap:10px!important;
+}
+
+.box-panel{
+  border-radius:16px!important;
+  padding:13px!important;
+}
+
+.analysis-box{
+  background:#111827!important;
+  border-radius:16px!important;
+}
+
+.analysis-text{
+  line-height:2!important;
+}
+
+@media(min-width:760px){
+  #tabs-container{
+    grid-template-columns:repeat(2,1fr)!important;
+  }
+}
+</style>
 <body class='min-h-screen bg-gray-50 text-gray-800 p-4 sm:p-6 lg:p-8'>
 <header class='max-w-5xl mx-auto mb-8 text-center'>
 <h1 class='text-3xl sm:text-4xl font-bold text-teal-800 mb-3 tracking-tight'>كنين سعد</h1>
